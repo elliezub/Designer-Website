@@ -1,0 +1,109 @@
+@media (prefers-reduced-motion: no-preference){
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+* {
+    margin:0;
+}
+
+#nav-bar {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(255, 255, 255, 0.8);
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+
+}
+
+#left-nav {
+    margin-left: 20px;
+}
+
+#right-nav {
+    margin-right: 20px;
+}
+
+#nav-ul {
+    list-style: none;
+}
+
+.nav-li {
+    display: inline; 
+    padding: 10px;
+    height:100%;
+}
+
+.nav-li a {
+    text-decoration: none;
+    color: rgb(46, 44, 44);
+}
+
+/* nav end */
+
+#top-img {
+    background-image: url("https://i.ibb.co/nkdqZyZ/ailizzz-modern-interior-design-liliac-purple-peach-accent-color-cfec2e78-119f-4a70-8cac-a2b953bcae16.png");
+    min-height: 60vh;
+    max-height:60vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    width:100vw;
+    /* position: relative;
+    top:0; */
+    z-index: -2;
+}
+
+#meet-heddy {
+    position: absolute;
+    width:100%;
+    text-align: center;
+    top: 200px;
+    color: white;
+    font-size:3.5rem;
+}
+
+/* img end */
+
+#about-div {
+    height:2000px;
+    position:relative;
+    top: 0;
+    padding-top:10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#about-div h2 {
+    text-align: center;
+    margin: 40px 0 60px 0;
+    font-size: 2rem;
+}
+
+#profile-img {
+    width: 300px;
+}
+
+#info-div {
+  display: flex; 
+  justify-content: space-evenly;
+}
+
+#info-p-div {
+    max-width: 350px;
+}
+
+
+@media (max-width: 1150px){
+
+#top-img {
+    background-size: cover;
+    background-attachment: unset;
+    background-position: center;
+}
+}
