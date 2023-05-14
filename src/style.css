@@ -182,6 +182,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 }
 
 .slideshow-container a {
@@ -219,9 +220,10 @@ h2 {
 }
 
 .square-img-link {
-    width:230px;
-    height: 230px;
+    width: 250px;
+    height: 250px;
     margin: 15px;
+    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -243,8 +245,8 @@ h2 {
 
 .top-img2 {
     background-image: url("https://images.unsplash.com/photo-1578258569276-9b2ad76822e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
-    min-height: 50vh;
-    max-height:50vh;
+    min-height: 40vh;
+    max-height:40vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -258,15 +260,15 @@ h2 {
     position: absolute;
     width:100%;
     text-align: center;
-    top: 200px;
+    top: 175px;
     color: white;
     font-size:3.5rem;
 }
 
 #contact-section {
     width: 100%;
-    background-color: rgba(212, 234, 253);
-    padding-bottom: 70px;
+    /* background-color: rgba(212, 234, 253); */
+    /* padding-bottom: 70px; */
 }
 
 #contact-section h2 {
@@ -282,6 +284,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 form {
@@ -330,6 +334,13 @@ width:50%;
 }
 
 
+@media (max-width: 1220px) {
+    .square-img-link {
+        width: 200px;
+        height: 200px;
+    }
+}
+
 
 @media (max-width: 1150px){
 
@@ -354,6 +365,9 @@ width:50%;
     form {
         margin: auto;
     }
+    .square-link-container {
+        max-width: 600px;
+    } 
 }
 
 @media (max-width: 768px) {
