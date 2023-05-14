@@ -138,7 +138,7 @@ h2 {
 /* end about */
 
 .photo-container {
-    max-width: 1223px;
+    max-width: 1200px;
     width: 90%;
     margin: auto;
     padding: 40px 0;
@@ -161,16 +161,73 @@ h2 {
 
 .review-slide {
     display: none;
-    padding: 20px;
+    padding: 20px 50px;
     text-align: center;
+
 }
 
 .slideshow-container {
     max-width: 700px;
     position: relative;
     margin: auto;
+    background-color: white;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.slideshow-container a {
+    position: absolute;
+    cursor: pointer;
+    color: rgb(197, 201, 201);
+    font-size: 3rem;
+    padding: 8px;
+    user-select: none;
+    
+}
+.previous {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+
+#big-slideshow-container {
+    margin-top: 30px;
+    background-color: rgba(212, 234, 253);
+    padding: 35px 0;
+    width: 100%;
+}
+
+/* slideshow end */
+
+.square-link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 70px auto;
+
+}
+
+.square-img-link {
+    width:230px;
+    height: 230px;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.square-img-link img {
+   /* width:100%; */
+    object-fit: cover;
+
+}
+
+
+.footer {
+    height: 300px;
+}
 
 
 @media (max-width: 1150px){
