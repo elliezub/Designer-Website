@@ -5,8 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
+    <nav id="nav-bar" class="navbar">
+        <div id="left-nav">
+            <h1>
+                <a href="index.html">
+                Heddy Z Designs</a>
+            </h1>
+        </div>
+        <div id="right-nav">
+            <ul id="nav-ul">
+                <li class="nav-li"><a href="index.html#about-div">About</a></li>
+                <li class="nav-li"><a href="">Lookbook</a></li>
+                <li class="nav-li"><a href="index.html#accolades">Accolades</a></li>
+                <li class="nav-li"><a href="">Press</a></li>
+                <li class="nav-li"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="contact-form">
+        <form action="https://formspree.io/f/xvonyryv" method="post">
+            <label for="name">
+                Your name:
+                <input type="text" name="name" placeholder="First and Last">
+            </label>
+            
+            <label for="email">
+                Your email:
+                <input type="email" name="email" placeholder="youremail@domain.com">
+            </label>
+            <label for="message">
+                Your message:
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Hello there! I would like to know more about..."></textarea>
+            </label>
+        
+        <button type="submit">Send</button>
+        </form>
+    </div>
+
     
+    <div class="square-link-container">
+        <div class="square-img-link">
+            <img class="link-img" src="https://images.unsplash.com/photo-1528460033278-a6ba57020470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="">
+        </div>
+        <div class="square-img-link">
+            <img src="https://images.unsplash.com/photo-1554328103-f1ab574c5a12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" alt="">
+        </div>
+        <div class="square-img-link">
+            <img src="https://images.unsplash.com/photo-1563836728031-53a374d2d2e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" alt="">
+        </div>
+        <div class="square-img-link">
+            <img src="https://images.unsplash.com/photo-1599424056685-cacc7bee5cc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+        </div>
+    </div>
+    
+    
+        <div class="footer">
+    <script src="src/script.js"></script>
 </body>
 </html>

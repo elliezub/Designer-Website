@@ -16,6 +16,11 @@ h1 {
     font-weight: 100;
 }
 
+h1 a {
+    text-decoration: none;
+    color:rgb(46, 44, 44)
+}
+
 h2 {
     font-weight: 100;
 }
@@ -132,7 +137,7 @@ h2 {
 
 #info-p-div {
     max-width: 450px;
-    font-size: 1.1rem;
+    font-size: 1.14rem;
 }
 
 /* end about */
@@ -207,7 +212,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1200px;
-    margin: 70px auto;
+    margin: 100px auto;
 
 }
 
@@ -227,8 +232,18 @@ h2 {
 
 .footer {
     height: 300px;
+    background-color: rgba(212, 234, 253);
+    position: relative;
+    bottom: 0;
 }
 
+/* CONTACT.HTML STUFF BELOW HERE */
+
+#contact-form {
+    height: 600px;
+    border: solid black;
+    margin-top: 70px;
+}
 
 @media (max-width: 1150px){
 
