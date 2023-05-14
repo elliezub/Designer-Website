@@ -85,7 +85,7 @@ h2 {
 
 /* nav end */
 
-#top-img {
+.top-img {
     background-image: url("https://i.ibb.co/s6ddvfv/enhanced-livingroom-final.jpg");
     min-height: 60vh;
     max-height:60vh;
@@ -96,7 +96,9 @@ h2 {
     /* position: relative;
     top:0; */
     z-index: -2;
+    /* FIX THE DISPLAY ON HUGE SCREEN SIZE */
 }
+
 
 #meet-heddy {
     position: absolute;
@@ -239,11 +241,95 @@ h2 {
 
 /* CONTACT.HTML STUFF BELOW HERE */
 
-#contact-form {
-    height: 600px;
-    border: solid black;
-    margin-top: 70px;
+.top-img2 {
+    background-image: url("https://images.unsplash.com/photo-1578258569276-9b2ad76822e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    min-height: 50vh;
+    max-height:50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width:100vw;
+    position: relative;
+    top:0;
+    z-index: -2;
 }
+
+#contact-heddy {
+    position: absolute;
+    width:100%;
+    text-align: center;
+    top: 200px;
+    color: white;
+    font-size:3.5rem;
+}
+
+#contact-section {
+    width: 100%;
+    background-color: rgba(212, 234, 253);
+    padding-bottom: 70px;
+}
+
+#contact-section h2 {
+    text-align: center;
+    padding-top: 60px;
+}
+
+#contact-form {
+    background-color: white;
+    margin: 50px auto;
+    max-width: 920px;
+    max-height: 610px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 20px;
+    padding-top: 20px;
+}
+
+#send {
+    margin:20px auto;
+    padding: 15px;
+    width: 100px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    color:rgb(46, 44, 44);
+    font-size: 1rem;
+}
+
+form label {
+    margin: 10px 0;
+}
+
+form input {
+    padding: 10px;
+}
+
+form textarea {
+    padding:10px;
+}
+
+#contact-form img {  
+    width: 100%;
+    height:auto;
+}
+
+#left-form {
+width:50%;
+}
+#right-form {
+    width:50%;
+    position: relative;
+}
+
+
 
 @media (max-width: 1150px){
 
@@ -252,6 +338,22 @@ h2 {
     background-attachment: unset;
     background-position: center;
 }
+}
+
+@media (max-width: 950px) {
+    #right-form {
+        display: none;
+    }
+    #contact-form {
+        margin-left: 30px;
+        margin-right:30px;
+    }
+    #left-form {
+    width: 100%;
+    }
+    form {
+        margin: auto;
+    }
 }
 
 @media (max-width: 768px) {
