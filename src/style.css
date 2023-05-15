@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Oswald:wght@200&family=Quicksand:wght@300&family=Thasadith&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Oswald:wght@200&family=Quicksand:wght@300;400;500&family=Thasadith&display=swap');
 
 @media (prefers-reduced-motion: no-preference){
     * {
@@ -37,17 +37,19 @@ h2 {
     left:0;
     width: 100%;
     z-index: 3;
+    box-shadow: 0 2px 5px 0 rgba(31, 31, 31, 0.2);
 }
 
 .navbar.shrink {
-    height:50px;
+    height:55px;
 }
 
 #left-nav {
-    margin-left: 20px;
+    margin-left: 15px;
     color:rgb(46, 44, 44);
     font-size: 1.5rem;
 }
+
 
 #right-nav {
     margin-right: 20px;
@@ -81,7 +83,7 @@ h2 {
 }
 
 .nav-li a:hover {
-    background-color: rgba(212, 234, 253, 0.8);
+    background-color: rgba(229, 243, 255, 0.8);
 }
 
 /* nav end */
@@ -99,17 +101,6 @@ h2 {
     z-index: -2;
     /* FIX THE DISPLAY ON HUGE SCREEN SIZE */
 }
-
-
-#meet-heddy {
-    position: absolute;
-    width:100%;
-    text-align: center;
-    top: 100px;
-    color: white;
-    font-size:3.5rem;
-}
-
 /* img end */
 
 #about-div {
@@ -118,18 +109,31 @@ h2 {
     top: 0;
     padding-top:10px;
     max-width: 1000px;
-    margin: 0 auto 70px auto;
+    margin: 0 auto 20px auto;
 }
 
 #about-div h2 {
     text-align: center;
     margin: 40px 0 60px 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 400;
 }
 
 #profile-img {
    height: 440px;
    width:auto;
+}
+
+#bioquote {
+    color: rgb(46, 44, 44);
+    margin: 30px 20px 0 20px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+#heddybio {
+    font-weight: 500;
 }
 
 #info-div {
@@ -140,7 +144,7 @@ h2 {
 
 #info-p-div {
     max-width: 450px;
-    font-size: 1.14rem;
+    font-size: 1rem;
 }
 
 /* end about */
@@ -191,7 +195,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 10px;
     
 }
 
@@ -199,22 +203,29 @@ h2 {
     position: absolute;
     cursor: pointer;
     color: rgb(197, 201, 201);
-    font-size: 3rem;
-    padding: 8px;
-    user-select: none;
-    
+    font-size: 2rem;
+    padding: 5px 8px 8px 8px;
+    user-select: none;   
+    transition: 0.3s ease-in-out;
 }
+
+.slideshow-container a:hover {
+    background-color: #d3d3d3;
+    color: white;
+}
+
 .previous {
     left: 0;
+    border-radius: 0 3px 3px 0;
 }
-.next {
+.nextacc {
     right: 0;
-    
+    border-radius: 3px 0 0 3px;
 }
 
 #big-slideshow-container {
     margin-top: 30px;
-    background-color: rgba(212, 234, 253);
+    background-color: rgb(229, 243, 255);
     padding: 35px 0;
     width: 100%;
 }
@@ -258,39 +269,74 @@ text-align: center;
 
 
 .footer {
-    background-color: rgba(212, 234, 253);
+    background-color: rgb(229, 243, 255);
     position: relative;
     bottom: 0;
-    text-align: center;
+    width: 100%;
     padding: 30px 0 0 0;
 }
 
-.footer span {
-    color:rgb(46, 44, 44);
+.footer-container {
+    max-width: 1200px;
+    width: 90vw;
+    margin: auto;
+    padding: 20px 10px 50px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerp1 {
+    font-size: .9rem;
+    margin: 10px 0 15px 0;
 }
 
 .footer a {
     text-decoration: none;
     color:rgb(46, 44, 44);
 }
-
-.second-footer {
- margin-top: 30px;
-}
-
-.third-footer {
-    margin-top: 30px;
-    padding-bottom: 10px;
-}
-
-.footer-logo {
+.contactbtn {
+    background-color:white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
     width: 100px;
-    margin-bottom: 10px;
+    margin: 4px 0;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.mail {
+    margin-bottom: 30px;
+}
+.contactbtn:hover {
+    background-color: rgb(219, 219, 219);
 }
 
 .websitebuilt {
     font-size: .8rem;
+    position: absolute;
+    bottom:10px;
 }
+
+.footer span {
+    color:rgb(46, 44, 44);
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.right-footer {
+    text-align: right;
+}
+
+.right-footer p {
+    margin: 2px 0;
+}
+.emailrightfooter {
+    font-size: .8rem;
+}
+
 
 
 /* CONTACT.HTML STUFF BELOW HERE */
@@ -407,6 +453,10 @@ width:50%;
     z-index: -2;
 }
 
+.photo {
+    cursor: pointer;;
+}
+
 /* MODAL LIGHTBOX  */
 
 
@@ -427,12 +477,23 @@ width:50%;
   /* Modal Content */
 .modal-container {
     position: relative;
-    margin: auto;
-    padding: 0;
+    margin: 20px auto;
+    padding: 0 auto;
     width: 90%;
     max-width: 1200px;
-    
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+.lookbookSlides img {
+    max-height: 80vh;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+ }
+
 
 .close {
     color: white;
@@ -454,17 +515,18 @@ width:50%;
  .next {
    cursor: pointer;
    position: absolute;
-   top: 50%;
    width: auto;
-   padding: 16px;
-   margin-top: -50px;
+   padding: 13px 13px 14px 12px;
    color: white;
    font-weight: bold;
    font-size: 20px;
    transition: 0.6s ease;
    border-radius: 0 3px 3px 0;
-   user-select: none;
-   -webkit-user-select: none;
+   z-index: 3;
+ }
+
+ .prev {
+    left:0;
  }
 
  .next {
@@ -475,11 +537,6 @@ width:50%;
  .prev:hover,
  .next:hover {
    background-color: rgba(0, 0, 0, 0.8);
- }
-
- .lookbookSlides img {
-    max-height: 80vh;
-    margin: auto;
  }
 
 
