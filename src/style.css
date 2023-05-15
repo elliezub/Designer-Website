@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Oswald:wght@200&family=Quicksand:wght@300&family=Thasadith&display=swap');
+
 @media (prefers-reduced-motion: no-preference){
     * {
         scroll-behavior: smooth;
     }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Quicksand:wght@300;500;700&display=swap');
 
 * {
     margin:0;
@@ -22,7 +22,7 @@ h1 a {
 }
 
 h2 {
-    font-weight: 100;
+  font-weight: 300;  
 }
 
 .navbar {
@@ -74,9 +74,10 @@ h2 {
     justify-content: center; 
     text-decoration: none;
     color: rgb(46, 44, 44);
-    width: 100px;
+    width: 125px;
     height: 100%;
     text-align: center;
+    font-size: 1.15rem;
 }
 
 .nav-li a:hover {
@@ -104,7 +105,7 @@ h2 {
     position: absolute;
     width:100%;
     text-align: center;
-    top: 200px;
+    top: 100px;
     color: white;
     font-size:3.5rem;
 }
@@ -127,7 +128,7 @@ h2 {
 }
 
 #profile-img {
-   height: 430px;
+   height: 440px;
    width:auto;
 }
 
@@ -153,6 +154,14 @@ h2 {
     gap: 20px;  
 }
 
+.two {
+    max-width: 1700px;
+}
+.photo-container .column {
+    display: flex;
+    justify-content: space-between;
+}
+
 .column {
     display: flex;
     flex-direction: column;
@@ -168,7 +177,7 @@ h2 {
 
 .review-slide {
     display: none;
-    padding: 20px 50px;
+    padding: 20px 70px;
     text-align: center;
 
 }
@@ -183,6 +192,7 @@ h2 {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    
 }
 
 .slideshow-container a {
@@ -199,6 +209,7 @@ h2 {
 }
 .next {
     right: 0;
+    
 }
 
 #big-slideshow-container {
@@ -215,7 +226,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 80px auto;
 
 }
 
@@ -223,8 +234,11 @@ h2 {
     width: 250px;
     height: 250px;
     margin: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: white;
 }
 
 .square-img-link img {
@@ -233,20 +247,58 @@ h2 {
 
 }
 
+.square-img-link h2 {
+position: absolute;
+top:42%;
+left: 0;
+width: 100%;
+text-align: center;
+/* letter-spacing: .075em; */
+}
+
 
 .footer {
-    height: 300px;
     background-color: rgba(212, 234, 253);
     position: relative;
     bottom: 0;
+    text-align: center;
+    padding: 30px 0 0 0;
 }
+
+.footer span {
+    color:rgb(46, 44, 44);
+}
+
+.footer a {
+    text-decoration: none;
+    color:rgb(46, 44, 44);
+}
+
+.second-footer {
+ margin-top: 30px;
+}
+
+.third-footer {
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.websitebuilt {
+    font-size: .8rem;
+}
+
 
 /* CONTACT.HTML STUFF BELOW HERE */
 
 .top-img2 {
-    background-image: url("https://images.unsplash.com/photo-1578258569276-9b2ad76822e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
-    min-height: 40vh;
-    max-height:40vh;
+    background-image: url("https://i.ibb.co/1dCfvWg/0-2.png");
+    min-height: 347px;
+    max-height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -255,6 +307,7 @@ h2 {
     top:0;
     z-index: -2;
 }
+
 
 #contact-heddy {
     position: absolute;
@@ -273,12 +326,12 @@ h2 {
 
 #contact-section h2 {
     text-align: center;
-    padding-top: 60px;
+    padding-top: 28px;
 }
 
 #contact-form {
     background-color: white;
-    margin: 50px auto;
+    margin: 60px auto;
     max-width: 920px;
     max-height: 610px;
     display: flex;
@@ -293,17 +346,17 @@ form {
     flex-direction: column;
     max-width: 450px;
     margin: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 #send {
     margin:20px auto;
-    padding: 15px;
-    width: 100px;
+    padding: 9px 9px 10px 9px;
+    width: 70px;
     cursor: pointer;
     background-color: white;
-    border: none;
-    border-radius: 20px;
+    border: 1px solid rgb(46, 44, 44);
+    border-radius: 10px;
     color:rgb(46, 44, 44);
     font-size: 1rem;
 }
@@ -314,10 +367,15 @@ form label {
 
 form input {
     padding: 10px;
+    border-radius: 5px;
+    border: solid 1px rgb(46, 44, 44);
 }
 
 form textarea {
-    padding:10px;
+    padding:10px;   
+    border-radius: 5px;
+    border: solid 1px rgb(46, 44, 44);
+    max-width: 400px;
 }
 
 #contact-form img {  
@@ -334,6 +392,31 @@ width:50%;
 }
 
 
+/* LOOKBOOK */
+
+.top-img3 {
+    background-image: url("https://i.ibb.co/gJR9S2v/harli-marten-n7a2-OJDSZns-unsplash.jpg");
+    min-height: 347px;
+    max-height:40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width:100vw;
+    position: relative;
+    top:0;
+    z-index: -2;
+}
+
+
+@media (min-width: 1900px) {
+    .top-img {
+        background-size: cover;
+        width: 100%;
+        background-attachment: unset;
+        background-position: center;
+    }
+}
+
 @media (max-width: 1220px) {
     .square-img-link {
         width: 200px;
@@ -344,7 +427,7 @@ width:50%;
 
 @media (max-width: 1150px){
 
-#top-img {
+.top-img {
     background-size: cover;
     background-attachment: unset;
     background-position: center;

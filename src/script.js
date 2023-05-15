@@ -24,6 +24,10 @@ let slideNumber = 0;
 
 //loop goes through each slide and hides it 
 function visibleSlide(num) {
+   if (slide.length === 0) { //check if there are any slides on the page
+    return; //if not return immediately 
+   }
+   
     for (let i = 0; i < slide.length; i++) {
         slide[i].style.display = "none";
     }
@@ -43,4 +47,27 @@ function changeSlide(num) {
 window.onload = function() {
     let slideNumber = 0;
     visibleSlide(slideNumber);
+}
+
+
+//center the accolades section on nav bar click 
+
+const accoladesLink = document.querySelector('.accoladesnavlink');
+
+if (accoladesLink) {
+
+accoladesLink.addEventListener("click", (event) => {
+
+const accolades = document.getElementById("accolades");
+
+ if (accolades) {
+    event.preventDefault();
+
+    const container = accolades.getBoundingClientRect();
+    const accoladesPosition = container.top + window.scrollY;
+    const middlePosition = accoladesPosition - (window.innerHeight / 4);
+
+    window.scrollTo({top: middlePosition, behavior: 'smooth'});
+ }
+});
 }

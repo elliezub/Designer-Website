@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/e5f441b479.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav id="nav-bar" class="navbar">
@@ -17,9 +18,9 @@
         </div>
         <div id="right-nav">
             <ul id="nav-ul">
-                <li class="nav-li"><a href="index.html#about-div">About</a></li>
-                <li class="nav-li"><a href="">Lookbook</a></li>
-                <li class="nav-li"><a href="index.html#accolades">Accolades</a></li>
+                <li class="nav-li"><a href="index.html">About</a></li>
+                <li class="nav-li"><a href="lookbook.html">Lookbook</a></li>
+                <li class="nav-li"><a class="accoladesnavlink" href="index.html#accolades">Accolades</a></li>
                 <li class="nav-li"><a href="">Press</a></li>
                 <li class="nav-li"><a href="contact.html">Contact</a></li>
             </ul>
@@ -33,15 +34,16 @@
     <!-- <h2>Hello! Get in touch</h2> -->
     <div id="contact-form">
         <div id="left-form">
+            <h2>Get in touch</h2>
         <form action="https://formspree.io/f/xvonyryv" method="post">
             
             <label for="name">
                 Your name: </label>
-                <input type="text" name="name" placeholder="First and Last">
+                <input type="text" id="name" name="name" placeholder="First and Last" autocomplete="name">
            
             <label for="email">
                 Your email:</label>
-                <input type="email" name="email" placeholder="youremail@domain.com">
+                <input type="email" id="email" name="email" placeholder="youremail@domain.com" autocomplete="email">
             
             <label for="message">
                 Your message:</label>
@@ -55,23 +57,40 @@
     </div>
 </div>
     
-    <div class="square-link-container">
-        <div class="square-img-link">
-            <img class="link-img" src="https://images.unsplash.com/photo-1528460033278-a6ba57020470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="">
-        </div>
-        <div class="square-img-link">
-            <img src="https://images.unsplash.com/photo-1554328103-f1ab574c5a12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" alt="">
-        </div>
-        <div class="square-img-link">
-            <img src="https://images.unsplash.com/photo-1563836728031-53a374d2d2e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" alt="">
-        </div>
-        <div class="square-img-link">
-            <img src="https://images.unsplash.com/photo-1599424056685-cacc7bee5cc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
-        </div>
+<div class="square-link-container">
+    <a class="square-img-link" href="index.html">
+        <h2>ABOUT</h2>
+        <img class="link-img" src="https://images.unsplash.com/photo-1528460033278-a6ba57020470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="">
+    </a>
+    <a class="square-img-link" href="lookbook.html">
+        <h2>LOOKBOOK</h2>
+        <img src="https://images.unsplash.com/photo-1554328103-f1ab574c5a12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" alt="">
+    </a>
+    <a class="square-img-link">
+        <h2>PRESS</h2>
+        <img src="https://images.unsplash.com/photo-1563836728031-53a374d2d2e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" alt="">
+    </a>
+    <a class="square-img-link">
+        <h2>CONTACT</h2>
+        <img src="https://images.unsplash.com/photo-1599424056685-cacc7bee5cc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+    </a>
+</div>
+    
+    
+<footer class="footer">
+    <img src="https://i.ibb.co/XySXFV8/final-logo.jpg" alt="logo" class="footer-logo">
+    <div class="first-footer">
+    <div><span>NAPLES, FL</span></div>
     </div>
-    
-    
-        <div class="footer">
+    <div class="second-footer">
+        <a href="tel:239.437.1000">239.437.1000</a>
+        <br>
+        <a href="mailto:zdesigns@comcast.net" target="_blank">zdesigns@comcast.net</a>
+    </div>
+    <div class="third-footer">
+        <span class="websitebuilt">Website built by <a href="https://elliezub.github.io/Personal-Portfolio/" target="_blank">Ellie Zubrowski</a></span>
+    </div>
+</footer>
     <script src="src/script.js"></script>
 </body>
 </html>
