@@ -71,3 +71,6 @@ const accolades = document.getElementById("accolades");
  }
 });
 }
+
+
+// MODAL LIGHT BOX LOOK BOOK 
