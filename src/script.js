@@ -74,3 +74,57 @@ const accolades = document.getElementById("accolades");
 
 
 // MODAL LIGHT BOX LOOK BOOK 
+
+
+let myModal = document.getElementById('modal-slideshow')
+let slides = document.getElementsByClassName('lookbookSlides')
+
+//open slideshow 
+function openSlideshow() {
+    myModal.style.display = "block";
+}
+
+//close slideshow 
+function closeSlideshow() {
+    myModal.style.display = "none";
+}
+
+// written first to initialize the slideIndex variable and to call the function on the first load of the page
+let slideIndex = 0;
+showSlides(slideIndex);
+
+// next prev 
+function plusSlides(num) {
+    showSlides(slideIndex += num);
+}
+
+function showSlides(num) {
+    if (num > slides.length){
+        slideIndex = 0
+}
+   else if (num < 0) {
+        slideIndex = slides.length -1;
+}  else {
+    slideIndex = num
+}
+
+for (let i = 0; i < slides.length; i++){
+    slides[i].style.display = "none";
+}
+    slides[slideIndex].style.display = "block";
+}
+
+// open slideshow from the image that gets clicked
+function addClickHandler(element, index) {
+    element.onclick = function() {
+        slideIndex = index; 
+        openSlideshow();
+        showSlides(slideIndex);
+    }
+}
+
+let imgElements = document.getElementsByClassName('photo');
+
+for(let i=0; i<imgElements.length; i++) {
+    addClickHandler(imgElements[i], i);
+}
