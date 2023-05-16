@@ -280,7 +280,7 @@ text-align: center;
     max-width: 1200px;
     width: 90vw;
     margin: auto;
-    padding: 20px 10px 50px 10px;
+    padding: 20px 10px 40px 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -332,9 +332,6 @@ text-align: center;
 
 .right-footer p {
     margin: 2px 0;
-}
-.emailrightfooter {
-    font-size: .8rem;
 }
 
 
