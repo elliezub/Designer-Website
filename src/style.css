@@ -381,7 +381,7 @@ text-align: center;
     flex-wrap: wrap;
     overflow: hidden;
     border-radius: 5px;
-    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.07), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 form {
