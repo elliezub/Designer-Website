@@ -296,72 +296,87 @@ text-align: center;
 /* letter-spacing: .075em; */
 }
 
-
+/* FOOTER */
 .footer {
     background-color: rgb(229, 243, 255);
     position: relative;
     bottom: 0;
     width: 100%;
+    right:0;
     padding: 30px 0 0 0;
+}
+
+.footer h3 {
+    font-size: 1.6rem;
+    padding-bottom: 8px;
 }
 
 .footer-container {
     max-width: 1200px;
-    width: 90vw;
+    width: 95vw;
     margin: auto;
-    padding: 20px 10px 40px 10px;
+    padding: 20px 15px 10px 15px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.footerp1 {
-    font-size: .9rem;
-    margin: 10px 0 15px 0;
+.top-footer {
+    text-align: center;
 }
 
-.footer a {
-    text-decoration: none;
-    color:rgb(46, 44, 44);
-}
 .contactbtn {
     background-color:white;
     border: none;
     border-radius: 10px;
     padding: 10px;
     width: 100px;
-    margin: 4px 0;
+    margin: 4px 5px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-.mail {
-    margin-bottom: 30px;
-}
+
 .contactbtn:hover {
     background-color: rgb(219, 219, 219);
 }
 
-.websitebuilt {
-    font-size: .8rem;
-    position: absolute;
-    bottom:10px;
+
+.bottom-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
+
+.right-footer {
+   text-align: right;
+   font-size: .8rem;
+}
+
+.left-footer {
+    font-size: .8rem;
+}
+
+.footerp {
+    font-size: .9rem;
+    margin: 8px 0 20px 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color:rgb(46, 44, 44);
+}
+
 
 .footer span {
     color:rgb(46, 44, 44);
 }
 
 .footer-logo {
-    width: 120px;
+    width: 50px;
     margin-bottom: 10px;
 }
 
-.right-footer {
-    text-align: right;
-}
-
-.right-footer p {
-    margin: 2px 0;
-}
+/* FOOTER END */
 
 
 
@@ -612,6 +627,9 @@ width:50%;
     .square-link-container {
         max-width: 600px;
     } 
+    .footer-container {
+        width: 93vw;
+    }
 }
 
 @media (max-width: 768px) {
@@ -624,5 +642,8 @@ width:50%;
     }
     #info-p-div {
         margin-top: 40px;
+    }
+    .footer-container {
+        width: 90vw;
     }
 }
