@@ -164,6 +164,7 @@ h2 {
 .photo-container .column {
     display: flex;
     justify-content: space-between;
+
 }
 
 .column {
@@ -171,6 +172,20 @@ h2 {
     flex-direction: column;
     gap:20px;
 }
+
+.column1 {
+    flex: 3.95;
+  }
+  
+  .column2 {
+    flex: 4.1;
+  }
+  
+  .column3 {
+    flex: 3.1;
+  }
+
+
 
 .photo img {
     width: 100%;
@@ -465,7 +480,7 @@ width:50%;
 }
 
 .photo {
-    cursor: pointer;;
+    cursor: pointer;
 }
 
 /* MODAL LIGHTBOX  */
