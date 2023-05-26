@@ -44,10 +44,10 @@ function changeSlide(num) {
     visibleSlide(slideNumber += num)
 }
 
-window.onload = function() {
+window.addEventListener("DOMContentLoaded", (event) => {
     let slideNumber = 0;
     visibleSlide(slideNumber);
-}
+})
 
 
 //center the accolades section on nav bar click 
