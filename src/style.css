@@ -677,3 +677,17 @@ form textarea {
         padding: 7px 50px 10px 50px;
     }
 }
+
+@media (max-width: 490px) {
+    .square-img-link {
+        width: 130px;
+        height: 130px;
+    }
+    .square-link-container {
+        max-width:  350px;
+    }
+    .square-link-container h2 {
+        font-size: 95%;
+        font-weight: 400;
+    }
+}
