@@ -56,6 +56,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
 //center the accolades section on nav bar click
 
 const accoladesLink = document.querySelector(".accoladesnavlink");
+const container = accolades.getBoundingClientRect();
+const accoladesPosition = container.top + window.scrollY;
+const middlePosition = accoladesPosition - window.innerHeight / 4;
 
 if (accoladesLink) {
   accoladesLink.addEventListener("click", (event) => {
@@ -63,11 +66,6 @@ if (accoladesLink) {
 
     if (accolades) {
       event.preventDefault();
-
-      const container = accolades.getBoundingClientRect();
-      const accoladesPosition = container.top + window.scrollY;
-      const middlePosition = accoladesPosition - window.innerHeight / 4;
-
       window.scrollTo({ top: middlePosition, behavior: "smooth" });
     }
   });
