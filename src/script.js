@@ -56,15 +56,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
 //center the accolades section on nav bar click
 
 const accoladesLink = document.querySelector(".accoladesnavlink");
-const container = accolades.getBoundingClientRect();
-const accoladesPosition = container.top + window.scrollY;
-const middlePosition = accoladesPosition - window.innerHeight / 4;
 
 if (accoladesLink) {
   accoladesLink.addEventListener("click", (event) => {
     const accolades = document.getElementById("accolades");
-
     if (accolades) {
+    const container = accolades.getBoundingClientRect();
+    const accoladesPosition = container.top + window.scrollY;
+    const middlePosition = accoladesPosition - window.innerHeight / 4;
       event.preventDefault();
       window.scrollTo({ top: middlePosition, behavior: "smooth" });
     }
@@ -124,3 +123,19 @@ let imgElements = document.getElementsByClassName("photo");
 for (let i = 0; i < imgElements.length; i++) {
   addClickHandler(imgElements[i], i);
 }
+
+// window.onload = function() {
+//     console.log('onload event triggered');
+//     window.history.pushState({page: "form"}, '', window.location.href);
+
+//     window.onpopstate = function(event) {
+//         console.log('onpopstate event triggered');
+//         if (event.state && event.state.page === 'form') {
+//             const myForm = document.getElementById('myForm');
+//             console.log('myForm:', myForm);
+//             if (myForm) {
+//                 myForm.reset();
+//             }
+//         }
+//     }
+// }
