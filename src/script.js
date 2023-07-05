@@ -94,7 +94,7 @@ function plusSlides(num) {
 }
 
 function showSlides(num) {
-  if (num > slides.length) {
+  if (num >= slides.length) {
     slideIndex = 0;
   } else if (num < 0) {
     slideIndex = slides.length - 1;
@@ -105,7 +105,10 @@ function showSlides(num) {
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slides[slideIndex].style.display = "block";
+  
+  if (slides[slideIndex]) { // Check if slides[slideIndex] is not undefined
+    slides[slideIndex].style.display = "block";
+  }
 }
 
 // open slideshow from the image that gets clicked
@@ -122,19 +125,3 @@ let imgElements = document.getElementsByClassName("photo");
 for (let i = 0; i < imgElements.length; i++) {
   addClickHandler(imgElements[i], i);
 }
-
-// window.onload = function() {
-//     console.log('onload event triggered');
-//     window.history.pushState({page: "form"}, '', window.location.href);
-
-//     window.onpopstate = function(event) {
-//         console.log('onpopstate event triggered');
-//         if (event.state && event.state.page === 'form') {
-//             const myForm = document.getElementById('myForm');
-//             console.log('myForm:', myForm);
-//             if (myForm) {
-//                 myForm.reset();
-//             }
-//         }
-//     }
-// }
