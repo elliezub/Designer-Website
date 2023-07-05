@@ -49,7 +49,6 @@ function changeSlide(num) {
 }
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  let slideNumber = 0;
   visibleSlide(slideNumber);
 });
 
